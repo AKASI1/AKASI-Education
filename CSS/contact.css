@@ -1,0 +1,59 @@
+/*================================Contact================================*/
+.contact {
+  grid-template-columns: 40% 60%;
+  margin: 12.5rem auto;
+  background-color: var(--bg1);
+  border-radius: 1rem;
+  height: 32rem;
+}
+
+/*================================Aside================================*/
+.contact .aside {
+  background-color: var(--pcolor);
+  border-radius: 1rem;
+  bottom: 9.5rem;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  transition: var(--tr);
+}
+.contact .aside img {
+  width: 70%;
+}
+.contact .aside:hover {
+  transform: scale(1.01);
+}
+.contact .links i {
+  background-color: var(--bg1);
+  font-size: 15px;
+  transition: var(--tr);
+}
+.contact .links i:hover {
+  background-color: transparent;
+}
+.contact li span {
+  font-size: 14px;
+  color: #e5e8cd;
+}
+
+/*================================Form================================*/
+.contact form input, textarea {
+  background-color: var(--bg);
+  border-radius: .5rem;
+}
+
+/*================================Media Queries================================*/
+
+/*===========================Tablets=============================*/
+@media (max-width: 992px) {
+  .contact .aside {
+    bottom: 5.5rem;
+  }
+}
+
+/*===========================Mobiles=============================*/
+@media (max-width: 767px) {
+  .contact {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    margin: 12rem auto 5rem;
+  }
+}
